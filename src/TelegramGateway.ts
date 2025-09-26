@@ -10,12 +10,16 @@ export class TelegramGateway {
   private readonly API_TOKEN: string;
   private readonly API_URL: string = "https://gatewayapi.telegram.org";
 
+  /**
+   * Initializes Telegram Gateway client.
+   * @param apiToken - Grab it in [here](https://gateway.telegram.org/account/api)
+   */
   constructor(private readonly apiToken: string) {
     this.API_TOKEN = apiToken;
   }
 
   /**
-   * Checks if we can send a message to the number. Returns `request_id` for future use.
+   * Use this method to send a verification message. Charges will apply according to the pricing plan for each successful message delivery. Note that this method is always free of charge when used to send codes to your own phone number.
    * @param number
    * @returns
    */
@@ -27,7 +31,7 @@ export class TelegramGateway {
       return {
         success: false,
         error: response.error,
-        number: response.data.phone_number,
+        number,
       };
     }
     return {

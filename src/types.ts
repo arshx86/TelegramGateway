@@ -11,7 +11,7 @@ export type VerificationStatus =
   | "expired";
 
 export interface SendOptions {
-  phone_number?: string;
+  phone_number: string;
   request_id?: string;
   sender_username?: string;
   code?: string;
