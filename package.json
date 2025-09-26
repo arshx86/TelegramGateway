@@ -1,5 +1,5 @@
 {
-  "name": "TelegramGateway",
+  "name": "telegramgateway-js",
   "version": "1.0.0",
   "description": "SDK for Telegram Gateway API",
   "type": "module",

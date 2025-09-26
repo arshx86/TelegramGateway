@@ -1,15 +1,15 @@
-# TelegramGatewayJS
+# TelegramGateway-JS
 
 A fully-typed TypeScript SDK for the [Telegram Gateway API](https://core.telegram.org/gateway/api) - send verification codes via Telegram.
 
 ## Installation
 
 ```bash
-bun add telegramgatewayjs
+bun add telegramgateway-js
 # or
-npm install telegramgatewayjs
+npm install telegramgateway-js
 # or
-yarn add telegramgatewayjs
+yarn add telegramgateway-js
 ```
 
 ## Quick Start
@@ -19,7 +19,7 @@ First, grab your API token from [Telegram Gateway API Documentation](https://gat
 - Messages to your own number are free of charge.
 
 ```typescript
-import { TelegramGateway } from "telegramgatewayjs";
+import { TelegramGateway } from "telegramgateway-js";
 
 // Initialize with your API token
 const client = new TelegramGateway("your-api-token");
